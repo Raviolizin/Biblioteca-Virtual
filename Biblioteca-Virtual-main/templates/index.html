@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual Escolar</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="hero">
+
+        <a class="login-btn" href="{{ url_for('login') }}">
+            🔐 Login
+        </a>
+
+        <div class="container">
+
+            <h1>📚 Biblioteca Virtual Escolar</h1>
+
+            <p class="subtitulo">
+                Um espaço dedicado ao conhecimento, à imaginação
+                e ao incentivo da leitura.
+            </p>
+
+            <a class="botao" href="{{ url_for('livros') }}">
+                📖 Explorar livros
+            </a>
+
+        </div>
+
+    </header>
+
+    <section class="info">
+
+        <h2>✨ Sobre nós</h2>
+
+        <p>
+            Somos um grupo de 7 estudantes do 3º ano do Ensino Médio e
+            criamos essa biblioteca para facilitar o acesso a
+            obras clássicas e educativas, ajudando estudantes
+            e leitores a encontrem conteúdos importantes.
+        </p>
+
+    </section>
+
+    <section class="beneficios">
+
+        <h2>🎯 O que você encontra aqui?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>📚 Livros clássicos</h3>
+
+                <p>
+                    Obras importantes da literatura brasileira
+                    e mundial disponíveis para leitura.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🧠 Conhecimento</h3>
+
+                <p>
+                    Conteúdos educativos que ajudam no aprendizado,
+                    interpretação e desenvolvimento pessoal.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>⚡ Acesso rápido</h3>
+
+                <p>
+                    Interface simples e moderna para encontrar
+                    livros facilmente.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="destaque">
+
+        <div class="destaque-box">
+
+            <h2>🌟 Livro em destaque</h2>
+
+            <h3>Dom Casmurro</h3>
+
+            <p>
+                Um dos romances mais famosos de Machado de Assis,
+                conhecido por sua narrativa envolvente e discussões
+                sobre memória, ciúme e relacionamento.
+            </p>
+
+            <a class="botao-secundario" href="{{ url_for('livros') }}">
+                Ver na biblioteca
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="frase">
+
+        <p>
+            “A leitura é para a mente o que o exercício é para o corpo.”
+        </p>
+
+        <span>— Joseph Addison</span>
+
+    </section>
+
+    <footer>
+
+        <p>
+            MMDC © 2026
+        </p>
+
+    </footer>
+
+</body>
+</html>

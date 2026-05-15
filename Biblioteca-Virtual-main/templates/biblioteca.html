@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+</head>
+<body>
+
+    <header class="hero">
+
+        <h1>📚 Biblioteca Virtual Escolar</h1>
+
+        <p class="subtitulo">
+            Explore obras clássicas, educativas e inspiradoras para ampliar seu conhecimento.
+        </p>
+
+    </header>
+
+    <section class="info">
+
+        <h2>✨ Descubra novas leituras</h2>
+
+        <p>
+            Nossa biblioteca virtual foi criada para incentivar o hábito da leitura
+            entre estudantes, professores e leitores em geral.
+        </p>
+
+    </section>
+
+    <div class="search-box">
+
+        <input
+            class="search-txt"
+            type="text"
+            placeholder="🔎 Pesquisar livro..."
+            onkeyup="searchbar()"
+        >
+
+    </div>
+
+    <section class="categorias">
+
+        <h2>📖 Categorias populares</h2>
+
+        <div class="tags">
+            <span>Literatura</span>
+            <span>Filosofia</span>
+            <span>Educação</span>
+            <span>Clássicos</span>
+            <span>Romance</span>
+            <span>Ciência</span>
+        </div>
+
+    </section>
+
+    <div class="estante">
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+    <script
+    src="{{ url_for('static', filename='main.js') }}"
+    defer></script>
+
+</head>
+<body>
+
+    <div class="card-container">
+    </div>
+
+    <div class="estante">
+
+        <!-- DOM CASMURRO -->
+        <div class="livro">
+
+            <img
+            src="{{ url_for('static', filename='dom-casmurro-32.jpg') }}"
+            alt="Dom Casmurro">
+
+            <h2>Dom Casmurro</h2>
+
+            <p>Autor: Machado de Assis</p>
+
+            <a href="{{ url_for('static', filename='livros/dom-casmurro.pdf') }}" download>
+                <button>Baixar livro</button>
+            </a>
+
+        </div>
+
+
+        <!-- O PEQUENO PRÍNCIPE -->
+        <div class="livro">
+
+            <img
+            src="{{ url_for('static', filename='images.jpeg') }}"
+            alt="O Pequeno Principe">
+
+            <h2>O Pequeno Principe</h2>
+
+            <p>Autor: Antoine de Saint-Exupéry</p>
+
+            <a href="{{ url_for('static', filename='livros/pequeno-principe.pdf') }}" download>
+                <button>Baixar livro</button>
+            </a>
+
+        </div>
+
+
+        <!-- PEQUENO MANUAL ANTIRRACISTA -->
+        <div class="livro">
+
+            <img
+            src="{{ url_for('static', filename='PMA.jpg') }}"
+            alt="Pequeno Manual Antirracista">
+
+            <h2>Pequeno Manual Antirracista</h2>
+
+            <p>Autora: Djamila Ribeiro</p>
+
+            <a href="{{ url_for('static', filename='livros/pequeno-manual-antirracista.pdf') }}" download>
+                <button>Baixar livro</button>
+            </a>
+
+        </div>
+
+
+        <!-- MEMÓRIAS PÓSTUMAS -->
+        <div class="livro">
+
+            <img
+            src="{{ url_for('static', filename='MPB.jpg') }}"
+            alt="Memórias Póstumas de Brás Cubas">
+
+            <h2>Memórias Póstumas de Brás Cubas</h2>
+
+            <p>Autor: Machado de Assis</p>
+
+            <a href="{{ url_for('static', filename='livros/memorias-postumas.pdf') }}" download>
+                <button>Baixar livro</button>
+            </a>
+
+        </div>
+
+
+        <!-- A REPÚBLICA -->
+        <div class="livro">
+
+            <img
+            src="{{ url_for('static', filename='a-republica.jpg') }}"
+            alt="A República">
+
+            <h2>A República</h2>
+
+            <p>Autor: Platão</p>
+
+            <a href="{{ url_for('static', filename='livros/a-republica.pdf') }}" download>
+                <button>Baixar livro</button>
+            </a>
+
+        </div>
+
+
+        <!-- O ALIENISTA -->
+        <div class="livro">
+
+            <img
+            src="{{ url_for('static', filename='alienista.jpg') }}"
+            alt="O Alienista">
+
+            <h2>O Alienista</h2>
+
+            <p>Autor: Machado de Assis</p>
+
+            <a href="{{ url_for('static', filename='livros/alienista.pdf') }}" download>
+                <button>Baixar livro</button>
+            </a>
+
+        </div>
+
+    </div>
+
+        </div>
+
+    </div>
+
+    <section class="info extra">
+
+        <h2>🎓 Por que incentivar a leitura?</h2>
+
+        <p>
+            A leitura ajuda na criatividade, pensamento crítico,
+            interpretação de texto e amplia o vocabulário.
+        </p>
+
+    </section>
+
+    <footer>
+
+        <p>
+            MMDC © 2026
+        </p>
+
+    </footer>
+
+</body>
+</html>

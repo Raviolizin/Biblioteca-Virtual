@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="cadastro-body">
+
+<div class="cadastro-page">
+
+    <div class="cadastro-container">
+
+        <h1>📝 Criar conta</h1>
+
+        <p class="cadastro-subtitulo">
+            Cadastre-se para acessar nossa biblioteca virtual
+            e explorar diversos livros educativos.
+        </p>
+
+        <form method="POST">
+
+            <div class="cadastro-input-group">
+
+                <label>Nome</label>
+
+                <input
+                    type="text"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+            </div>
+
+            <div class="cadastro-input-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Digite seu email"
+                    required
+                >
+
+            </div>
+
+            <div class="cadastro-input-group">
+
+                <label>Senha</label>
+
+                <input
+                    type="password"
+                    name="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+            </div>
+
+            <button type="submit">
+                🚀 Criar conta
+            </button>
+
+        </form>
+
+        <div class="cadastro-login">
+
+            <p>
+                Já possui uma conta?
+            </p>
+
+            <a href="{{ url_for('login') }}">
+                Fazer login
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

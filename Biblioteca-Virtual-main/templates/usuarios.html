@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="usuarios-body">
+
+<div class="usuarios-page">
+
+    <header class="usuarios-header">
+
+        <h1>👥 Usuários cadastrados</h1>
+
+        <p>
+            Lista de usuários registrados na Biblioteca Virtual Escolar.
+        </p>
+
+    </header>
+
+    <div class="usuarios-grid">
+
+        {% for usuario in usuarios %}
+
+        <div class="usuario-card">
+
+            <div class="usuario-topo">
+
+                <div class="avatar">
+                    👤
+                </div>
+
+                <h2>{{ usuario.nome }}</h2>
+
+            </div>
+
+            <div class="usuario-info">
+
+                <p>
+                    <strong>Email:</strong>
+                    {{ usuario.email }}
+                </p>
+
+                <p>
+                    <strong>Senha:</strong>
+                    {{ usuario.senha }}
+                </p>
+
+                <p>
+                    <strong>Cadastro:</strong>
+                    {{ usuario.data_cadastro }}
+                </p>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+</body>
+</html>
